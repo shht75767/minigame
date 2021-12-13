@@ -8,5 +8,10 @@ function init() {
   addItem('bug', 5, 'carrot/img/bug.pbg');
 }
 
-function addItem(className, count, imgPath) {}
+function addItem(className, count, imgPath) {
+  const x1 = 0;
+  const y1 = 0;
+  const x2 = fieldRect.width;
+  const y2 = fieldRect.height;
+}
 init();
