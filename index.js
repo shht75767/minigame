@@ -14,4 +14,7 @@ function addItem(className, count, imgPath) {
   const x2 = fieldRect.width;
   const y2 = fieldRect.height;
 }
+for (let i = 0; i < count; i++) {
+  const item = document.createElement;
+}
 init();
