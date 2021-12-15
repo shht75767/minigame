@@ -15,6 +15,7 @@ function addItem(className, count, imgPath) {
   const y2 = fieldRect.height;
 }
 for (let i = 0; i < count; i++) {
-  const item = document.createElement;
+  const item = document.createElement('img');
+  item.setAttribute('class', className);
 }
 init();
