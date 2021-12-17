@@ -17,5 +17,7 @@ function addItem(className, count, imgPath) {
 for (let i = 0; i < count; i++) {
   const item = document.createElement('img');
   item.setAttribute('class', className);
+  item.setAttribute('src', imgPath);
+  item.style.position = 'absolute';
 }
 init();
