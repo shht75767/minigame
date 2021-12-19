@@ -19,5 +19,6 @@ for (let i = 0; i < count; i++) {
   item.setAttribute('class', className);
   item.setAttribute('src', imgPath);
   item.style.position = 'absolute';
+  const x = ramdomNumber(x1, x2);
 }
 init();
