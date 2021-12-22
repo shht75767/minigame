@@ -21,5 +21,7 @@ for (let i = 0; i < count; i++) {
   item.style.position = 'absolute';
   const x = ramdomNumber(x1, x2);
   const y = ramdomNumber(y1, y2);
+  item.style.left = `${x}px`;
+  item.style.top = `${y}px`;
 }
 init();
