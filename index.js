@@ -24,5 +24,6 @@ for (let i = 0; i < count; i++) {
   item.style.left = `${x}px`;
   item.style.top = `${y}px`;
   item.style.top = `${y}px`;
+  item.style.top = `${y}px`;
 }
 init();
