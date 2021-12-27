@@ -27,4 +27,7 @@ for (let i = 0; i < count; i++) {
   // item.style.top = `${y}px`;
   // item.style.top = `${y}px`;
 }
+function ramdomNumber(min, max) {
+  return;
+}
 init();
