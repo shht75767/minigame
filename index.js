@@ -28,6 +28,6 @@ for (let i = 0; i < count; i++) {
   // item.style.top = `${y}px`;
 }
 function ramdomNumber(min, max) {
-  return;
+  return Math.random() * (max - min) + min;
 }
 init();
