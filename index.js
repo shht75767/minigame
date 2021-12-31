@@ -1,7 +1,7 @@
 const gameField = document.querySelector('.game__field');
 const fieldRect = gameField.getBoundingClientRect();
 
-console.log(fieldRect);
+const CARROY_SIZE = 80;
 function init() {
   console.log(fieldRect);
   addItem('carrot', 5, 'carrot/img/carrot.png');
