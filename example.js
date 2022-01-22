@@ -13,21 +13,21 @@ function addItem(className, count, imgPath) {
   const y1 = 0;
   const x2 = fieldRect.width;
   const y2 = fieldRect.height;
-}
-for (let i = 0; i < count; i++) {
-  const item = document.createElement('img');
-  item.setAttribute('class', className);
-  item.setAttribute('src', imgPath);
-  item.style.position = 'absolute';
-  const x = ramdomNumber(x1, x2);
-  const y = ramdomNumber(y1, y2);
-  item.style.left = `${x}px`;
-  item.style.top = `${y}px`;
-  fieldRect.appendChild(item);
-  // item.style.top = `${y}px`;
-  // item.style.top = `${y}px`;
-}
-function ramdomNumber(min, max) {
-  return Math.random() * (max - min) + min;
+  for (let i = 0; i < count; i++) {
+    const item = document.createElement('img');
+    item.setAttribute('class', className);
+    item.setAttribute('src', imgPath);
+    item.style.position = 'absolute';
+    const x = ramdomNumber(x1, x2);
+    const y = ramdomNumber(y1, y2);
+    item.style.left = `${x}px`;
+    item.style.top = `${y}px`;
+    fieldRect.appendChild(item);
+    // item.style.top = `${y}px`;
+    // item.style.top = `${y}px`;
+  }
+  function ramdomNumber(min, max) {
+    return Math.random() * (max - min) + min;
+  }
 }
 init();
