@@ -24,7 +24,7 @@ function addItem(className, count, imgPath) {
   }
 }
 function randomNumber(min, max) {
-  return Math.random();
+  return Math.random() * (max - min) + min;
 }
 
 init();
