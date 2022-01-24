@@ -1,11 +1,13 @@
 const gameField = document.querySelector('.game__field');
 const fieldRect = gameField.getBoundingClientRect();
+const CARROT_COUNT = 5;
+const BUG_COUNT = 5;
 
 const CARROT_SIZE = 80;
 function init() {
   console.log(fieldRect);
-  addItem('carrot', 5, 'img/carrot.png');
-  addItem('bug', 5, 'img/bug.png');
+  addItem('carrot', CARROT_COUNT, 'img/carrot.png');
+  addItem('bug', BUG_COUNT, 'img/bug.png');
 }
 function addItem(className, count, imgPath) {
   const x1 = 0;
