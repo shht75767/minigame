@@ -11,8 +11,8 @@ function init() {
 function addItem(className, count, imgPath) {
   const x1 = 0;
   const y1 = 0;
-  const x2 = fieldRect.width;
-  const y2 = fieldRect.height;
+  const x2 = fieldRect.width - CARROY_SIZE;
+  const y2 = fieldRect.height - CARROY_SIZE;
   for (let i = 0; i < count; i++) {
     const item = document.createElement('img');
     item.setAttribute('class', className);
