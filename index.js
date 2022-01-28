@@ -2,6 +2,7 @@ const gameField = document.querySelector('.game__field');
 const fieldRect = gameField.getBoundingClientRect();
 const CARROT_COUNT = 5;
 const BUG_COUNT = 5;
+const gameBtn = document.querySelector('game__button');
 
 const CARROT_SIZE = 80;
 function init() {
