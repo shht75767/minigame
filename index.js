@@ -3,6 +3,7 @@ const fieldRect = gameField.getBoundingClientRect();
 const CARROT_COUNT = 5;
 const BUG_COUNT = 5;
 const gameBtn = document.querySelector('game__button');
+const gameTimer = document.querySelector('game__timer');
 
 const CARROT_SIZE = 80;
 function init() {
