@@ -2,11 +2,14 @@ const gameField = document.querySelector('.game__field');
 const fieldRect = gameField.getBoundingClientRect();
 const CARROT_COUNT = 5;
 const BUG_COUNT = 5;
+
 const gameBtn = document.querySelector('game__button');
 const gameTimer = document.querySelector('game__timer');
 const gameScore = document.querySelector('game__score');
 
 const CARROT_SIZE = 80;
+function startGame() {}
+
 function init() {
   console.log(fieldRect);
   addItem('carrot', CARROT_COUNT, 'img/carrot.png');
