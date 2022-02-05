@@ -9,7 +9,7 @@ const gameScore = document.querySelector('game__score');
 
 const CARROT_SIZE = 80;
 function startGame() {}
-
+let started = false;
 function init() {
   console.log(fieldRect);
   addItem('carrot', CARROT_COUNT, 'img/carrot.png');
