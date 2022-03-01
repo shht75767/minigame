@@ -14,8 +14,15 @@ let score = 0;
 let timer = undefined;
 
 gameBtn.addEventListener('click', () => {
-  console.log('log');
+  if (started) {
+    stopGame();
+  } else {
+    startGame();
+  }
 });
+
+function stopGame() {}
+function startGame() {}
 function init() {
   console.log(fieldRect);
   addItem('carrot', CARROT_COUNT, 'img/carrot.png');
