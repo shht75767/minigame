@@ -21,8 +21,17 @@ gameBtn.addEventListener('click', () => {
   }
 });
 
+function startGame() {
+  init();
+  showStopButton();
+}
 function stopGame() {}
-function startGame() {}
+
+function showStopButton() {
+  const icon = gameBtn.querySelector('.fa-play');
+  icon.classList.add('fa-stop');
+  icon.classList.remove('fa-play');
+}
 function init() {
   console.log(fieldRect);
   addItem('carrot', CARROT_COUNT, 'img/carrot.png');
