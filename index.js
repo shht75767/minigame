@@ -4,9 +4,9 @@ const CARROT_SIZE = 80;
 const CARROT_COUNT = 5;
 const BUG_COUNT = 5;
 
-const gameBtn = document.querySelector('game__button');
-const gameTimer = document.querySelector('game__timer');
-const gameScore = document.querySelector('game__score');
+const gameBtn = document.querySelector('.game__button');
+const gameTimer = document.querySelector('.game__timer');
+const gameScore = document.querySelector('.game__score');
 
 function startGame() {}
 let started = false;
@@ -57,5 +57,7 @@ function addItem(className, count, imgPath) {
 function randomNumber(min, max) {
   return Math.random() * (max - min) + min;
 }
+
+startGame();
 
 init();
