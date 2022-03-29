@@ -9,10 +9,13 @@ const gameBtn = document.querySelector('.game__button');
 const gameTimer = document.querySelector('.game__timer');
 const gameScore = document.querySelector('.game__score');
 const returnPopup = document.querySelector('.pop-up');
+const returnBtn = document.querySelector('.pop-up__button');
 
 let started = false;
 let score = 0;
 let timer = undefined;
+
+gameField.addEventListener('click', onFieldClick);
 
 gameBtn.addEventListener('click', () => {
   if (started) {
@@ -57,8 +60,6 @@ function stopGameTimer() {
   clearInterval(timer);
 }
 
-gameStopBtn.addEventListener;
-
 function updateTimer(time) {
   const minutes = Math.floor(time / 60);
   const seconds = time % 60;
@@ -70,6 +71,10 @@ function showStopButton() {
   icon.classList.add('fa-stop');
   icon.classList.remove('fa-play');
 }
+
+returnBtn.addEventListener('click', () => {
+  location.reload('ture');
+});
 function showTimerAndScore() {
   gameTimer.style.visibility = 'visible';
   gameScore.style.visibility = 'visible';
@@ -80,6 +85,8 @@ function init() {
   addItem('carrot', CARROT_COUNT, 'img/carrot.png');
   addItem('bug', BUG_COUNT, 'img/bug.png');
 }
+
+function onFieldClick() {}
 function addItem(className, count, imgPath) {
   const x1 = 0;
   const y1 = 0;
