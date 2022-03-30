@@ -86,7 +86,18 @@ function init() {
   addItem('bug', BUG_COUNT, 'img/bug.png');
 }
 
-function onFieldClick() {}
+function onFieldClick(event) {
+  if (!started) {
+    return;
+  } else {
+  }
+  const target = event.target;
+  if (target.matches('.carrot')) {
+    target.remove();
+    gameScore.innerText = '4';
+  } else if (target.matches('.bug')) {
+  }
+}
 function addItem(className, count, imgPath) {
   const x1 = 0;
   const y1 = 0;
